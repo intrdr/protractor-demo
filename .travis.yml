@@ -2,5 +2,8 @@ language: node_js
 node_js:
   - "4.3.1"
 
+before_script:
+  - "webdriver-manager update"
+
 script:
   - "npm test"

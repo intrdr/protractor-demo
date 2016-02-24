@@ -7,9 +7,10 @@ app.use(express.static(__dirname));
 app.listen(3456);
 console.log('Server running at http://localhost:3456');
 
+
 // Tests for the calculator.
 exports.config = {
-  directConnect: false,
+  directConnect: true,
   framework: 'jasmine2',
 
   specs: [
@@ -17,7 +18,6 @@ exports.config = {
   ],
 
   capabilities: {
-    'browserName': 'phantomjs',
-	'phantomjs.cli.args': ['--loglevel=DEBUG']
+    'browserName': 'chrome'
   },
 };
