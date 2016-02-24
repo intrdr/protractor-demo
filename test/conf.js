@@ -1,7 +1,7 @@
 // Tests for the calculator.
 exports.config = {
-  directConnect: true,
-
+  directConnect: false,
+  seleniumAddress: 'http://localhost:4444',
   framework: 'jasmine2',
 
   specs: [
@@ -9,6 +9,7 @@ exports.config = {
   ],
 
   capabilities: {
-    'browserName': 'chrome'
+    'browserName': 'phantomjs',
+	'phantomjs.cli.args': ['--loglevel=DEBUG']  
   },
 };
