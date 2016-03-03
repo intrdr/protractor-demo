@@ -20,7 +20,7 @@ var CalcCtrl = function($timeout, $scope) {
         var second = parseInt($scope.second);
         switch ($scope.operator) {
           case '+':
-            latestResult = first + second;
+            latestResult = first + first;
             break;
           case '-':
             latestResult = first - second;
